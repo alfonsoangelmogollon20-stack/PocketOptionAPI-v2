@@ -234,7 +234,7 @@ class WebsocketClient(object):
             elif message[0] == "successcloseOrder":
                 self.successcloseOrder = True
 
-            elif message[0] == "loadHistoryPeriod":
+            elif message[0] == "loadHistoryPeriodFast":
                 self.loadHistoryPeriod = True
 
             elif message[0] == "updateStream":

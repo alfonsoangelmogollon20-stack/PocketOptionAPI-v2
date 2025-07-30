@@ -20,7 +20,7 @@ start_counter = time.perf_counter()
 #ssid = """42["auth",{"session":"abcdefghijklm12nopqrstuvwx","isDemo":1,"uid":12345678,"platform":2}]"""
 #demo = True
 
-ssid = """42["auth",{"session":"abcdefghijklm12nopqrstuvwx","isDemo":1,"uid":12345678,"platform":2}]"""
+ssid = """42["auth",{"session":"f6bn57s4gehp3h745r964haddq","isDemo":1,"uid":100298782,"platform":2,"isFastHistory":true,"isOptimized":true}]"""
 demo = True
 
 days = 365
@@ -28,7 +28,7 @@ min_payout = 80
 period = 60
 expiration = 60
 
-pair_list = ["#AAPL_otc"]
+pair_list = ["CADJPY_otc"]
 
 api = PocketOption(ssid,demo)
 
@@ -156,6 +156,8 @@ def start():
     if prep:
         his = save_history()
         if his:
+            print("✅ Datos históricos (1 año) descargados con éxito.")
+            print("⏳ Esperando y guardando datos en vivo...")
             start = get_history() # This Command started to collecting Live Tick Data ...
             if start:
                 save = save_live_data()

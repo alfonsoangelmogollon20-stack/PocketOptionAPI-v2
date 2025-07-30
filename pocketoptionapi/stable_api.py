@@ -289,7 +289,7 @@ class PocketOption:
                             break
 
                     if self.api.history_data is not None:
-                        global_value.set_csv(self.api.history_data[0]['asset'], self.api.history_data)
+                        global_value.set_csv(active, self.api.history_data)
                         if end_time is None:
                             break
                         _ = int(self.api.history_data[len(self.api.history_data)-1]["time"]) - int(self.api.history_data[0]["time"])
