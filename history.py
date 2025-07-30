@@ -20,7 +20,7 @@ start_counter = time.perf_counter()
 #ssid = """42["auth",{"session":"abcdefghijklm12nopqrstuvwx","isDemo":1,"uid":12345678,"platform":2}]"""
 #demo = True
 
-ssid = """42["auth",{"session":"f6bn57s4gehp3h745r964haddq","isDemo":1,"uid":100298782,"platform":2,"isFastHistory":true,"isOptimized":true}]"""
+ssid = """42["auth",{"session":"abcdefghijklm12nopqrstuvwx","isDemo":1,"uid":12345678,"platform":2}]"""
 demo = True
 
 days = 365
