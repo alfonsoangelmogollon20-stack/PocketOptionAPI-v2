@@ -237,10 +237,16 @@ class WebsocketClient(object):
             elif message[0] == "loadHistoryPeriodFast":
                 self.loadHistoryPeriod = True
 
+            elif message[0] == "loadHistoryPeriod":
+                self.loadHistoryPeriod = True
+
             elif message[0] == "updateStream":
                 self.updateStream = True
 
             elif message[0] == "updateHistoryNew":
+                self.updateHistoryNew = True
+
+            elif message[0] == "updateHistoryNewFast":
                 self.updateHistoryNew = True
 
         elif message.startswith("42") and "NotAuthorized" in message:
