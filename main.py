@@ -682,3 +682,5 @@ if __name__ == "__main__":
     # print(f'CPU-gebundene Task-Zeit: {rund} {end_counter - start_counter} Sekunden')
     global_value.logger("CPU-gebundene Task-Zeit: %s Sekunden" % str(int(end_counter - start_counter)), "INFO")
 
+    # Ejecutar la app Flask en el puerto 5000
+    app.run(host="0.0.0.0", port=10000)
