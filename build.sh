@@ -11,5 +11,6 @@ make
 make install
 cd ..
 
-# Una vez instalada la librería C, ahora instala las de Python
-pip install -r requirements.txt
+# --- LÍNEA MODIFICADA ---
+# Usamos python3 -m pip para asegurar que se usa el pip del entorno virtual correcto
+python3 -m pip install -r requirements.txt
