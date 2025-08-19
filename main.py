@@ -8,6 +8,10 @@ import numpy as np
 import pandas as pd
 import indicators as qtpylib
 
+# --- AÑADE ESTA LÍNEA AQUÍ ---
+app = flask.Flask(__name__)
+# -----------------------------
+
 global_value.loglevel = 'INFO'
 
 # Session configuration
