@@ -1,3 +1,4 @@
+import flask
 import time, math, asyncio, json, threading
 from datetime import datetime
 from pocketoptionapi.stable_api import PocketOption
@@ -12,15 +13,11 @@ global_value.loglevel = 'INFO'
 # Session configuration
 start_counter = time.perf_counter()
 
-### REAL SSID Format::
-#ssid = """42["auth",{"session":"gqep422ie95ar8uabq0q9nsdsf","isDemo":1,"uid":107695044,"platform":2,"isFastHistory":true,"isOptimized":true}]"""
-#demo = False
-
 ### DEMO SSID Format::
-#ssid = """42["auth",{"session":"abcdefghijklm12nopqrstuvwx","isDemo":1,"uid":12345678,"platform":2}]"""
+#ssid = """"42["auth",{"session":"gqep422ie95ar8uabq0q9nsdsf","isDemo":1,"uid":107695044,"platform":2,"isFastHistory":true,"isOptimized":true}]"""
 #demo = True
 
-ssid = """42["auth",{"session":"abcdefghijklm12nopqrstuvwx","isDemo":1,"uid":12345678,"platform":2}]"""
+ssid = """"42["auth",{"session":"gqep422ie95ar8uabq0q9nsdsf","isDemo":1,"uid":107695044,"platform":2,"isFastHistory":true,"isOptimized":true}]"""
 demo = True
 
 min_payout = 80
