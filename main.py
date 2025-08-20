@@ -2,7 +2,7 @@ import time, math, asyncio, json, threading
 from datetime import datetime
 from pocketoptionapi.stable_api import PocketOption
 import pocketoptionapi.global_value as global_value
-import talib.abstract as ta
+import pandas_ta as ta
 import numpy as np
 import pandas as pd
 import indicators as qtpylib
